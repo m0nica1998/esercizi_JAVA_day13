@@ -11,11 +11,19 @@ public class Prodotto {
 		//per avere il prezzo comprensivo di iva formattato
 	
 	//creare gli attributi (codice, nome, marca,prezzo e iva)
+	private int codice;
+	private String nome;
+	private String marca;
+	private double prezzo;
+	private double iva;
 	//creare i costruttori
-	//metodi getter setter
-	//mettere il setter privato per codice
+	
 	//metodo esporre prezzo
 	//metodo prezzo con iva
+	
+	//metodi getter setter
+		//mettere il setter privato per codice
+	
 	
 	
 }
