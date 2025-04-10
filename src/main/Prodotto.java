@@ -79,4 +79,14 @@ public class Prodotto {
 		
 	}
 	
+	//metodo esporre prezzo
+	
+	public void esporrePrezzo() {
+		System.out.println(prezzo);
+	}
+		//metodo prezzo con iva
+	public void prezzoIva() {
+		System.out.println(((prezzo/100)*iva)+prezzo);
+	}
+	
 }
