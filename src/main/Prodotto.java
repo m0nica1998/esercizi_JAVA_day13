@@ -16,7 +16,7 @@ public class Prodotto {
 	private String marca;
 	private double prezzo;
 	private double iva;
-	//creare i costruttori
+	
 	
 	//metodo esporre prezzo
 	//metodo prezzo con iva
@@ -27,32 +27,56 @@ public class Prodotto {
 		return codice;
 	}
 	private void setCodice(int codice) {
-		this.codice = codice;
+		if(codice >= 0) {
+			this.codice = codice;
+		}
+		
 	
 	}
 	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
-		this.nome = nome;
+		if(nome != "") {
+			this.nome = nome;
+		}
+		
 	}
 	public String getMarca() {
 		return marca;
 	}
 	public void setMarca(String marca) {
-		this.marca = marca;
+		if(marca != "") {
+			this.marca = marca;
+		}
+		
 	}
 	public double getPrezzo() {
 		return prezzo;
 	}
 	public void setPrezzo(double prezzo) {
-		this.prezzo = prezzo;
+		if(prezzo > 0) {
+			this.prezzo = prezzo;
+		}
+		
 	}
 	public double getIva() {
 		return iva;
 	}
 	public void setIva(double iva) {
-		this.iva = iva;
+		if(iva > 0) {
+			this.iva = iva;
+		}
+		
+	}
+	
+	//creare i costruttori
+	public Prodotto(String nome, String marca, double prezzo, double iva) {
+		setNome(nome);
+		setMarca(marca);
+		setPrezzo(prezzo);
+		setIva(iva);
+		
 	}
 	
 }
