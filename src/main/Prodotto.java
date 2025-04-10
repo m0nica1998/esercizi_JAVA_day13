@@ -22,8 +22,37 @@ public class Prodotto {
 	//metodo prezzo con iva
 	
 	//metodi getter setter
-		//mettere il setter privato per codice
+	//mettere il setter privato per codice
+	public int getCodice() {
+		return codice;
+	}
+	private void setCodice(int codice) {
+		this.codice = codice;
 	
-	
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getMarca() {
+		return marca;
+	}
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+	public double getPrezzo() {
+		return prezzo;
+	}
+	public void setPrezzo(double prezzo) {
+		this.prezzo = prezzo;
+	}
+	public double getIva() {
+		return iva;
+	}
+	public void setIva(double iva) {
+		this.iva = iva;
+	}
 	
 }
