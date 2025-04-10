@@ -21,7 +21,10 @@ public class Smartphone extends Prodotto{
 		return imei;
 	}
 	public void setImei(String imei) {
-		this.imei = imei;
+		if(imei != "") {
+			this.imei = imei;
+		}
+		
 	}
 
 	public int getMemoria() {
@@ -29,7 +32,10 @@ public class Smartphone extends Prodotto{
 	}
 
 	public void setMemoria(int memoria) {
-		this.memoria = memoria;
+		if(memoria > 0) {
+			this.memoria = memoria;
+		}
+		
 	}
 	
 }
