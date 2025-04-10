@@ -10,11 +10,22 @@ public class Televisore extends Prodotto{
 		super(nome, marca, prezzo, iva);
 		// TODO Auto-generated constructor stub
 	}
+	
+	//getter e setter
 	public int getDimensioni() {
 		return dimensioni;
 	}
 	public void setDimensioni(int dimensioni) {
-		this.dimensioni = dimensioni;
+		if(dimensioni > 0) {
+			this.dimensioni = dimensioni;
+		}
+		
+	}
+	public boolean isSmart() {
+		return isSmart;
+	}
+	public void setSmart(boolean isSmart) {
+		this.isSmart = isSmart;
 	}
 
 }
