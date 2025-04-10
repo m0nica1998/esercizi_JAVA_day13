@@ -6,9 +6,11 @@ public class Televisore extends Prodotto{
 	//caratterizzati dalle dimensioni e dalla proprietà di essere smart oppure no
 	private int dimensioni;
 	private boolean isSmart;
-	public Televisore(String nome, String marca, double prezzo, double iva) {
+	public Televisore(String nome, String marca, double prezzo, double iva, int dimensioni, boolean isSmart) {
 		super(nome, marca, prezzo, iva);
 		// TODO Auto-generated constructor stub
+		setDimensioni(dimensioni);
+		setSmart(isSmart);
 	}
 	
 	//getter e setter
