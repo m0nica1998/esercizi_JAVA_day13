@@ -38,4 +38,17 @@ public class Smartphone extends Prodotto{
 		
 	}
 	
+	//metori override
+	@Override
+	public String toString(){
+		String stringa = "nome: " + super.getNome() + "\n" 
+				       + "marca: " + super.getMarca() + "\n" 
+				       + "prezzo: " + super.getPrezzo() + "\n"
+				       +"iva: " + super.getIva() +  "\n"
+				       + "imei: " + getImei() + "\n"
+				       + "memoria" + getMemoria() + "\n";
+		return stringa;
+		
+	}
+	
 }
